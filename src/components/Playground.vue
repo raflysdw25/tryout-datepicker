@@ -1,22 +1,35 @@
 <template>
-  <div>
+  <!-- <div>
     <Datepicker
       v-model="date"
-      :format="'dd-MM-yyyy'"
+      :format="'yyyy-MM-dd'"
       locale="id"
       :day-names="['Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab', 'Min']"
       auto-apply
-      :hide-navigation="['time']"
+      :hide-navigation="['calendar', 'time']"
       menu-class-name="custom-datepicker-style"
+      range
     />
-    <Datepicker
-      style="margin-top: 20px"
-      v-model="date2"
-      month-picker
-      auto-apply
-      :hide-navigation="['time']"
-    />
-  </div>
+  </div> -->
+  <Datepicker
+    v-model="date"
+    :format="'yyyy-MM-dd'"
+    locale="id"
+    :day-names="['Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab', 'Min']"
+    auto-apply
+    :hide-navigation="['calendar', 'time']"
+    menu-class-name="custom-datepicker-style"
+    inline
+    range
+  />
+  <!-- <Datepicker
+    style="margin-top: 20px"
+    v-model="date"
+    month-picker
+    auto-apply
+    :hide-navigation="['time']"
+    inline
+  /> -->
 </template>
 
 <script setup>

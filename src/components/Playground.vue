@@ -34,5 +34,15 @@ const date2 = ref();
 } */
 
 /* .dp__calendar_header */
+.dp__inner_nav {
+  background-color: #3e7dc0;
+  color: #fff;
+  border-radius: 2.85px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.dp__calendar_header_separator {
+  display: none;
+}
 /* .dp__calendar */
 </style>
